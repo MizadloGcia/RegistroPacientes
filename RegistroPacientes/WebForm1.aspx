@@ -48,5 +48,12 @@
     </div>
     <div>
         <asp:Button ID="GuardarButton" runat="server" Text="Guardar" OnClick="GuardarButton_Click" />
+    &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="ButtonLimpiar" runat="server" Text="Limpiar" OnClick="ButtonLimpiar_Click" />        
+&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" OnClick="ButtonBuscar_Click" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="ButtonEliminar" runat="server" Text="Eliminar" OnClick="ButtonEliminar_Click" />
     </div>
+
 </asp:Content>

@@ -31,6 +31,36 @@ namespace RegistroPacientes
             pac.Telefono = TelefonoTextBox.Text;
 
             pac.Insertar();
+
+            Limpiar();
+        }
+
+        protected void ButtonEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ButtonBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ButtonLimpiar_Click(object sender, EventArgs e)
+        {
+            Limpiar();
+        }
+        public void Limpiar()
+        {
+            NombresTextBox.Text = "";
+            ApellidosTextbox.Text = "";
+            CedulaTextBox.Text = "";
+            CelularTextBox.Text = "";
+            DireccionTextBox.Text = "";
+            FechaIngresoTextBox.Text = "";
+            FechaNacTextBox.Text = "";
+            OcupacionTextBox.Text = "";
+            SexoDropDownList.SelectedIndex = 0;
+            TelefonoTextBox.Text = "";
         }
     }
 }
