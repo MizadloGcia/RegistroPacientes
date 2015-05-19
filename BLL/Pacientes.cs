@@ -39,8 +39,8 @@ namespace BLL
 
         public bool Insertar()
         {
-            return con.EjecutarDB("Insert into Pacientes(Nombres, Aellidos, Direccion, Telefono, Celular, FechaNac, FechaIngreso, Sexo, Ocupacion) Values('" + Nombres +
-                "','" + Apellidos + "','" + Direccion + "','" + Telefono + "','" + Cedula + "','" + Celular + "','" + FechaNacimiento.ToString("MM/dd/yy HH:mm:ss") + "','" + FechaIngreso.ToString("MM/dd/yy HH:mm:ss") + "','" + Sexo + "','" + Ocupacion);
+            return con.EjecutarDB("Insert into Pacientes(Nombres, Apellidos, Direccion, Telefono, Cedula, Celular, FechaNac, FechaIngreso, Sexo, Ocupacion) Values('" + Nombres +
+                "','" + Apellidos + "','" + Direccion + "','" + Telefono + "','" + Cedula + "','" + Celular + "','" + FechaNacimiento.ToString("MM/dd/yy HH:mm:ss") + "','" + FechaIngreso.ToString("MM/dd/yy HH:mm:ss") + "','" + Sexo + "','" + Ocupacion + "')");
         }
     }
 }

@@ -28,13 +28,25 @@
     </div>
     <div>
         <asp:Label ID="Label7" runat="server" Text="Fecha de Nac"></asp:Label>
-        <asp:TextBox ID="FechaNacTextBox" runat="server"></asp:TextBox>
+        <asp:TextBox ID="FechaNacTextBox" runat="server" TextMode="Date"></asp:TextBox>
     </div>
     <div>
         <asp:Label ID="Label8" runat="server" Text="Fecha Ingreso"></asp:Label>
-        <asp:TextBox ID="FechaIngresoTextBox" runat="server"></asp:TextBox>
+        <asp:TextBox ID="FechaIngresoTextBox" runat="server" TextMode="Date"></asp:TextBox>
     </div>
     <div>
-        <asp:Button ID="GuardarButton" runat="server" Text="Guardar" />
+        <asp:Label ID="Label9" runat="server" Text="Ocupacion"></asp:Label>
+        <asp:TextBox ID="OcupacionTextBox" runat="server"></asp:TextBox>
+    </div>
+    <div>
+        <asp:Label ID="Label10" runat="server" Text="Genero"></asp:Label>
+        <asp:DropDownList ID="SexoDropDownList" runat="server">
+            <asp:ListItem Value="0">Seleccionar Sexo</asp:ListItem>
+            <asp:ListItem Value="1">Femenino</asp:ListItem>
+            <asp:ListItem Value="2">Masculino</asp:ListItem>
+        </asp:DropDownList>
+    </div>
+    <div>
+        <asp:Button ID="GuardarButton" runat="server" Text="Guardar" OnClick="GuardarButton_Click" />
     </div>
 </asp:Content>
