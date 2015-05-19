@@ -51,8 +51,8 @@ namespace BLL
 
         public bool Modificar(int IdPaciente)
         {
-            return con.EjecutarDB("Update Pacientes set Nombres=" + Nombres + ",Apellidos =" + Apellidos + ",Direccion =" + Direccion + ",Telefono =" + Telefono + ",Cedula =" + Cedula + ",Celular =" + Celular + ",FechaNac=" + FechaNacimiento.ToString("MM/dd/yy HH:mm:ss") + ",FechaIngreso=" + FechaIngreso.ToString("MM/dd/yy HH:mm:ss") + ",Sexo=" + Sexo + ",Ocupacion=" + Ocupacion
-                + "where IdPaciente =" + IdPaciente);
+            return con.EjecutarDB("Update Pacientes set Nombres='" + Nombres + "',Apellidos ='" + Apellidos + "',Direccion ='" + Direccion + "',Telefono ='" + Telefono + "',Cedula ='" + Cedula + "',Celular ='" + Celular + "',FechaNac='" + FechaNacimiento.ToString("MM/dd/yy HH:mm:ss") + "',FechaIngreso='" + FechaIngreso.ToString("MM/dd/yy HH:mm:ss") + "',Sexo='" + Sexo + "',Ocupacion='" + Ocupacion
+                + "'where IdPaciente =" + IdPaciente);
         }
 
         public bool Buscar()
@@ -80,7 +80,7 @@ namespace BLL
 
         public DataTable Listar(string Filtro,string Campos)
         {
-            return con.BuscarDb("Select " + Campos + " from Pacientes " + Filtro);
+            return con.BuscarDb("Select " + Campos + " from Pacientes where " + Filtro);
         }
     }
 }
