@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConsultaSistemas.aspx" />
+    <Content Include="MenuPrincipal.aspx" />
+    <Content Include="RegistroRevision.aspx" />
+    <Content Include="RegistroSistema.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -64,7 +68,35 @@
     <Content Include="ConsultaPacientes.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultaSistemas.aspx.cs">
+      <DependentUpon>ConsultaSistemas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultaSistemas.aspx.designer.cs">
+      <DependentUpon>ConsultaSistemas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.designer.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroRevision.aspx.cs">
+      <DependentUpon>RegistroRevision.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroRevision.aspx.designer.cs">
+      <DependentUpon>RegistroRevision.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroSistema.aspx.cs">
+      <DependentUpon>RegistroSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroSistema.aspx.designer.cs">
+      <DependentUpon>RegistroSistema.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,6 +121,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site1.Master" />
+    <None Include="Properties\PublishProfiles\Perfil1.pubxml" />
+    <None Include="Properties\PublishProfiles\Perfil2.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
