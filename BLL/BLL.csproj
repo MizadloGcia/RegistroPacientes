@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Revision.cs" />
     <Compile Include="SistemasFisiologico.cs" />
     <Compile Include="Pacientes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

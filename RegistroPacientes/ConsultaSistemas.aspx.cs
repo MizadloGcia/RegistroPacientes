@@ -21,5 +21,14 @@ namespace RegistroPacientes
             SistFisGridView.DataSource = SistemasFisiologico.Listar(Filtro, "*");
             SistFisGridView.DataBind();
         }
+
+        protected void BuscarButton_Click(object sender, EventArgs e)
+        {
+            string Filtro = "1=1";
+            
+            Filtro += "and Nombre like '%" + FiltroTextBox.Text + "%'";
+            SistFisGridView.DataSource = SistemasFisiologico.Listar(Filtro, "*");
+            SistFisGridView.DataBind();
+        }
     }
 }
