@@ -8,5 +8,6 @@
         <asp:Button ID="RegRevButton" runat="server" Text="Registrar Revision" OnClick="RegRevButton_Click" />
         <asp:Button ID="ConsRevButton" runat="server" Text="Consultar Revision" />
         <asp:Button ID="RegSistButton" runat="server" Text="Registrar Sistema Fisiologico" OnClick="RegSistButton_Click" />
+        <asp:Button ID="CerrarSesButton" runat="server" Text="Cerrar Session" OnClick="CerrarSesButton_Click" />
     </div>
 </asp:Content>

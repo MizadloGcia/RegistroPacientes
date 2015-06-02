@@ -34,5 +34,10 @@ namespace RegistroPacientes
             Response.Redirect("RegistroSistema.aspx");
         }
 
+        protected void CerrarSesButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InicioSession.aspx");
+        }
+
     }
 }

@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ConsultaSistemas.aspx" />
+    <Content Include="InicioSession.aspx" />
     <Content Include="MenuPrincipal.aspx" />
     <Content Include="RegistroRevision.aspx" />
     <Content Include="RegistroSistema.aspx" />
@@ -74,6 +75,13 @@
     </Compile>
     <Compile Include="ConsultaSistemas.aspx.designer.cs">
       <DependentUpon>ConsultaSistemas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSession.aspx.cs">
+      <DependentUpon>InicioSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioSession.aspx.designer.cs">
+      <DependentUpon>InicioSession.aspx</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.aspx.cs">
       <DependentUpon>MenuPrincipal.aspx</DependentUpon>
